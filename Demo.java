@@ -9,6 +9,15 @@ public class Demo {
 
 
         calculator.multiply(2, 6);
+        calculator.multiply(2, 6);
+        calculator.multiply(2, 6);
+        calculator.multiply(2, 6);
+        calculator.multiply(2, 6);
+        calculator.multiply(2, 6);
+        calculator.multiply(2, 6);
+        calculator.multiply(2, 6);
+        calculator.multiply(2, 6);
+        calculator.multiply(2, 6);
 
 
 
