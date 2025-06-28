@@ -4,5 +4,17 @@ public class Demo {
     public static void main(String[] args) {
         Calc calculator = new Calc();
         calculator.add(5, 3);
+
+
+
+        calculator.subtract(10, 4);
     }
 }
+
+
+
+
+
+
+
+
