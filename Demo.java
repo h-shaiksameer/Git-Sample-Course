@@ -7,6 +7,11 @@ public class Demo {
 
 
 
+
+        calculator.multiply(2, 6);
+
+
+
         calculator.subtract(10, 4);
     }
 }
