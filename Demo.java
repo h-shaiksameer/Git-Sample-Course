@@ -1,34 +1,26 @@
-import tools.Calc;
-
-public class Demo {
-    public static void main(String[] args) {
-        Calc calculator = new Calc();
-        calculator.add(5, 3);
-
-
-
-
-        calculator.multiply(2, 6);
-        calculator.multiply(2, 6);
-        calculator.multiply(2, 6);
-        calculator.multiply(2, 6);
-        calculator.multiply(2, 6);
-        calculator.multiply(2, 6);
-        calculator.multiply(2, 6);
-        calculator.multiply(2, 6);
-        calculator.multiply(2, 6);
-        calculator.multiply(2, 6);
-
-
-
-        calculator.subtract(10, 4);
+// Custom Runtime Exception
+class NavinException extends RuntimeException {
+    public NavinException(String message) {
+        super(message);
     }
 }
 
+public class Demo {
 
+    // Method that throws ClassNotFoundException
+    static void loadClass(String className) throws ClassNotFoundException {
+        Class.forName(className);
+    }
 
+    public static void main(String[] args) {
+        try {
+            // Trying to load a non-existent class
+            loadClass("b&n4");  // invalid class name → will fail
+        } catch (ClassNotFoundException e) {
+            System.out.println("❌ Not able to find the class");
 
-
-
-
-
+            // Optionally rethrow custom exception
+            throw new NavinException("Custom: Class load failed");
+        }
+    }
+}
